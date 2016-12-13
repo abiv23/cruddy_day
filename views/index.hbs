@@ -1,0 +1,8 @@
+<h1>Best Movies</h1>
+<p>Checkout our movies or add your own</p>
+<a href="/new">Add a movie to the database</a>
+<h2>Movies</h2>
+{{#each movies }}
+  <h4>{{this.title}}</h4><a href='/{{this.id}}'>See all our info on this movie</a>
+  <p>Director: {{this.director}} {{this.year}} Genre: {{this.genre}}</p>
+{{/each}}
