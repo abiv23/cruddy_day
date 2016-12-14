@@ -1,8 +1,41 @@
-<h1>Best Movies</h1>
-<p>Checkout our movies or add your own</p>
-<a href="/new">Add a movie to the database</a>
-<h2>Movies</h2>
-{{#each movies }}
-  <h4>{{this.title}}</h4><a href='/{{this.id}}'>See all our info on this movie</a>
-  <p>Director: {{this.director}} {{this.year}} Genre: {{this.genre}}</p>
-{{/each}}
+<div class="container">
+  <div class="row">
+    {{#each movies }}
+    <div class="row">
+      <div class="col m4">
+      </div>
+            <div class="col m4">
+              <div class="card">
+                <div class="card-image">
+                  <img src="{{this.img}}">
+                </div>
+                <div class="card-action">
+                  <a href='/{{this.id}}'>More Info</a>
+                </div>
+              </div>
+            </div>
+      <div class="col m4">
+      </div>
+          </div>
+    {{/each}}
+  </div>
+    <div class="row">
+      <div class="col m4">
+      </div>
+      <div class="col m4">
+        <a class="center-align button" href="/new">Add New Movie</a>
+      </div>
+      <div class="col m4">
+      </div>
+    </div>  
+</div>
+
+
+
+<!-- {{#each movies }}
+<div class="index-border">
+    <h6 class="center-align">{{this.title}}</h6>
+    <img src="{{this.img}}" alt="{{this.title}}"><br>
+    <a href='/{{this.id}}'>See all info</a>
+</div>
+{{/each}} -->

@@ -1,0 +1,15 @@
+<div class="container">
+  <form action="/{{movie.id}}?_method=put" method="post">
+    <label for="title">Title:</label><br>
+    <input type="text" name="title" id="title" value="{{movie.title}}"><br>
+    <label for="director">Director</label>
+    <input type="text" name="director" id="director" value="{{movie.director}}"><br>
+    <label for="genre">Genre: </label><br>
+    <input type="text" name="genre" value="{{movie.genre}}"><br>
+    <label for="year">Year: </label><br>
+    <input type="number" name="year" value="{{movie.year}}"><br>
+    <label for="img">Img url: </label>
+    <input type="text" name="img" value={{movie.img}}>
+    <button type="submit">Edit Movie</button>
+  </form>
+</div>

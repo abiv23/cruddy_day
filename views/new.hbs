@@ -1,15 +1,18 @@
-<form action="/" method="post">
-  Title:<br>
-  <input type="text" name="title">
-  <br>
-  Director:<br>
-  <input type="text" name="director">
-  <br>
-  Genre:<br>
-  <input type="text" name="genre">
-  <br>
-  Year: <br>
-  <input type="number" name="year">
-  <br>
-  <input type="submit">
-</form>
+<div class="container">
+  <form action="/new" method="post">
+    <label for="title">Title:</label><br>
+    <input type="text" name="title" id="title" value="{{data.title}}"><br>
+    <label for="director">Director</label>
+    <input type="text" name="director" id="director" value=""><br>
+    <label for="genre">Genre: </label><br>
+    <input type="text" name="genre"><br>
+    <label for="year">Year: </label><br>
+    <input type="number" name="year"><br>
+    <label for="img">Img url: </label>
+    <input type="text" name="img">
+    <button type="submit">Add Movie!</button>
+  </form>
+  <div>
+    {{message}}
+  </div>
+</div>

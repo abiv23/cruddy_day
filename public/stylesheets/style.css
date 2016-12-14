@@ -1,8 +1,38 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  width: 100%;
 }
 
 a {
   color: #00B7FF;
+}
+
+footer {
+  margin-bottom: 0;
+}
+
+header {
+  margin-top: 0;
+}
+
+img {
+  height: 50vh;
+  width: 20vw;
+}
+
+.button {
+    display: block;
+    width: 6em;
+    height: 3em;
+    background: lightgrey;
+    padding: 1em, 2em;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    margin: 1em 0 0 0;
+}
+
+.index-border {
+  border: .25em solid black;
 }

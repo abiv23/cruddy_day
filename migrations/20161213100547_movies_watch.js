@@ -7,6 +7,7 @@ exports.up = function(knex, Promise) {
     table.string('genre');
     table.integer('year');
     table.boolean('watched');
+    table.string('img');
   })
 };
 
